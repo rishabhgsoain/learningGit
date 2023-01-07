@@ -1,0 +1,32 @@
+{{>header}}
+{{>navBar}}
+<style>
+  .login-form{
+    width: 40%;
+    margin: 20px auto;
+  }
+  a{
+    text-decoration: none;
+    cursor:pointer;
+  }
+  
+  #register{
+   background-color: aliceblue;
+  }
+</style>
+<h1>LOGIN</h1>
+<form action="/login" method="POST" class="login-form">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+  </div>
+  <div class="mb-3 form-check" id="register">
+    <a href="/register">REGISTER</a>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
